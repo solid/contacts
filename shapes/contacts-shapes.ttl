@@ -6,6 +6,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix sh:   <http://www.w3.org/ns/shacl#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/>.
 
 # Domain ontology for Contacts in vcard-like form
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
@@ -33,7 +34,7 @@
 :AddressBookShape a sh:NodeShape ;
   sh:targetClass vcard:AddressBook ;
   sh:property [
-    sh:path vcard:fn ;
+    sh:path dc:title ;
     sh:datatype xsd:string;
     sh:minCount 1;
   ];
