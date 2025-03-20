@@ -34,6 +34,7 @@ Example:
 ```
 
 Example:
+
 _addressbook.ttl_:
 ```ttl
 <#this> a vcard:AddressBook;
@@ -54,6 +55,7 @@ _groupIndex.ttl_:
 ```
 
 Example:
+
 _addressbook.ttl_:
 ```ttl
 <#this> a vcard:AddressBook;
@@ -86,6 +88,7 @@ _person.ttl_:
 ```
 
 Example:
+
 _addressbook.ttl_:
 ```ttl
 <#this> a vcard:AddressBook;
