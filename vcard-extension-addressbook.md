@@ -33,7 +33,16 @@ Example:
     rdfs:isDefinedBy <https://www.w3.org/2006/vcard/ns> ;
 ```
 
-Example: see the AddressBook example above.
+Example:
+_addressbook.ttl_:
+```ttl
+<#this> a vcard:AddressBook;
+      vcard:groupIndex <groupIndex.ttl>.
+```
+_groupIndex.ttl_:
+```ttl
+<addressbook.ttl#this> vcard:includesGroup <groups.ttl#group>.
+```
 
 ## https://www.w3.org/2006/vcard/ns#includesGroup
 ```ttl
@@ -52,7 +61,7 @@ _addressbook.ttl_:
 ```
 _groupIndex.ttl_:
 ```ttl
-<addressbook.ttl#this> a vcard:includesGroup <groups.ttl#group>.
+<addressbook.ttl#this> vcard:includesGroup <groups.ttl#group>.
 ```
 _groups.ttl_:
 ```ttl
@@ -64,14 +73,46 @@ _person.ttl_:
 ```ttl
 <#this> a vcard:Individual;
   vcard:fn "John Doe";
-  vcard:url [ a vcard:WebID; vcard:value <#this>.
+  vcard:url [ a vcard:WebID; vcard:value <#this> ].
 ```
 
 ## https://www.w3.org/2006/vcard/ns#nameEmailIndex
-TBD
+```ttl
+:nameEmailIndex a owl:ObjectProperty ;
+    rdfs:label "name email index"@en ;
+    rdfs:comment "Links an AddressBook to a document containing Individuals that appear in it"@en ;
+    rdfs:comment "This property is not part of vCard as defined by the IETF"@en ;
+    rdfs:isDefinedBy <https://www.w3.org/2006/vcard/ns> ;
+```
+
+Example:
+_addressbook.ttl_:
+```ttl
+<#this> a vcard:AddressBook;
+      vcard:nameEmailIndex <people.ttl>.
+```
+_people.ttl_:
+```ttl
+<#person> a vcard:Individual;
+  vcard:fn "John Doe";
+  vcard:inAddressBook <addressbook.ttl#this>.
+```
 
 ## https://www.w3.org/2006/vcard/ns#inAddressBook
-TBD
+```ttl
+:inAddressBook a owl:ObjectProperty ;
+    rdfs:label "in AddressBook"@en ;
+    rdfs:comment "Indicates that an Individual appears in an AddressBook"@en ;
+    rdfs:comment "This property is not part of vCard as defined by the IETF"@en ;
+    rdfs:isDefinedBy <https://www.w3.org/2006/vcard/ns> ;
+```
+
+Example:
+```ttl
+<#person> a vcard:Individual;
+  vcard:fn "John Doe";
+  vcard:inAddressBook <addressbook.ttl#this>.
+```
 
 ## https://www.w3.org/2006/vcard/ns#WebID
 ```ttl
