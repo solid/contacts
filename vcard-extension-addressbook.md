@@ -8,7 +8,7 @@ Note that the location and contents of this note may still change before these t
 :AddressBook a owl:Class ;
     rdfs:label "AddressBook"@en ;
     rdfs:comment "Represents a collection of vCard people and/or vCard groups"@en ;
-    rdfs:comment "This class is used by the Solid Project client-client spec for Contacts, but not part of vCard as defined by the IETF"@en ;
+    rdfs:comment "This class is not part of vCard as defined by the IETF"@en ;
     rdfs:isDefinedBy <https://www.w3.org/2006/vcard/ns> ;
 ```
 
@@ -29,7 +29,7 @@ Example:
 :groupIndex a owl:ObjectProperty ;
     rdfs:label "group index"@en ;
     rdfs:comment "Links an AddressBook to a document containing all its includesGroup properties"@en ;
-    rdfs:comment "This property is used by the Solid Project client-client spec for Contacts, but not part of vCard as defined by the IETF"@en ;
+    rdfs:comment "This property is not part of vCard as defined by the IETF"@en ;
     rdfs:isDefinedBy <https://www.w3.org/2006/vcard/ns> ;
 ```
 
@@ -40,7 +40,7 @@ Example: see the AddressBook example above.
 :includesGroup a owl:ObjectProperty ;
     rdfs:label "includes group"@en ;
     rdfs:comment "When included in the group index document of an AddressBook, adds the group to the AddressBook"@en ;
-    rdfs:comment "This property is used by the Solid Project client-client spec for Contacts, but not part of vCard as defined by the IETF"@en ;
+    rdfs:comment "This property is not part of vCard as defined by the IETF"@en ;
     rdfs:isDefinedBy <https://www.w3.org/2006/vcard/ns> ;
 ```
 
@@ -78,7 +78,7 @@ TBD
 :WebID a owl:ObjectProperty ;
     rdfs:label "WebID"@en ;
     rdfs:comment "The WebID of an Individual"@en ;
-    rdfs:comment "This property is used by the Solid Project client-client spec for Contacts, but not part of vCard as defined by the IETF"@en ;
+    rdfs:comment "This property is not part of vCard as defined by the IETF"@en ;
     rdfs:isDefinedBy <https://www.w3.org/2006/vcard/ns> ;
 ```
 
