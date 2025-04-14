@@ -5,35 +5,29 @@
 vcard:AddressBook a owl:Class ;
     rdfs:label "AddressBook"@en ;
     rdfs:comment "Represents a collection of vCard people and/or vCard groups"@en ;
-    rdfs:comment "This class is not part of vCard as defined by the IETF"@en ;
-    rdfs:isDefinedBy <https://www.w3.org/2006/vcard/ns> .
+    rdfs:comment "This class is not part of vCard as defined by the IETF"@en .
 
 vcard:groupIndex a owl:ObjectProperty ;
     rdfs:label "group index"@en ;
     rdfs:comment "Links an AddressBook to a document containing all its includesGroup properties"@en ;
-    rdfs:comment "This property is not part of vCard as defined by the IETF"@en ;
-    rdfs:isDefinedBy <https://www.w3.org/2006/vcard/ns> .
+    rdfs:comment "This property is not part of vCard as defined by the IETF"@en .
 
 vcard:includesGroup a owl:ObjectProperty ;
     rdfs:label "includes group"@en ;
     rdfs:comment "When included in the group index document of an AddressBook, adds the group to the AddressBook"@en ;
-    rdfs:comment "This property is not part of vCard as defined by the IETF"@en ;
-    rdfs:isDefinedBy <https://www.w3.org/2006/vcard/ns> .
+    rdfs:comment "This property is not part of vCard as defined by the IETF"@en .
 
 vcard:nameEmailIndex a owl:ObjectProperty ;
     rdfs:label "name email index"@en ;
     rdfs:comment "Links an AddressBook to a document containing Individuals that appear in it"@en ;
-    rdfs:comment "This property is not part of vCard as defined by the IETF"@en ;
-    rdfs:isDefinedBy <https://www.w3.org/2006/vcard/ns> .
+    rdfs:comment "This property is not part of vCard as defined by the IETF"@en .
 
 vcard:inAddressBook a owl:ObjectProperty ;
     rdfs:label "in AddressBook"@en ;
     rdfs:comment "Indicates that an Individual appears in an AddressBook"@en ;
-    rdfs:comment "This property is not part of vCard as defined by the IETF"@en ;
-    rdfs:isDefinedBy <https://www.w3.org/2006/vcard/ns> .
+    rdfs:comment "This property is not part of vCard as defined by the IETF"@en .
 
 vcard:WebID a owl:ObjectProperty ;
     rdfs:label "WebID"@en ;
     rdfs:comment "The WebID of an Individual"@en ;
-    rdfs:comment "This property is not part of vCard as defined by the IETF"@en ;
-    rdfs:isDefinedBy <https://www.w3.org/2006/vcard/ns> .
+    rdfs:comment "This property is not part of vCard as defined by the IETF"@en .
